@@ -11,14 +11,68 @@ body {
   min-height: 100%;
 }
 
+/* all h1 *or* all p tags have no margin and no padding */
+h1,
 p {
+  margin: 0;
+  padding: 0;
+}
+
+/* p {
+  color: yellow;
+} */
+
+p.stand-out {
+  font-size: 4rem;
+}
+
+p.super-important {
   color: red;
+  /* margin-top: 5px;
+  margin-right: 1px;
+  margin-bottom: 5px;
+  margin-left: 1px; */
+
+  /* shortcut for above */
+  /* margin: 5px 1px 5px 1px; */
+
+  /* shortcut for above */
+  /* margin: 5px 1px; */
+
+  /* same margin all around */
+  margin: 0.5rem;
+}
+
+p.super-important.stand-out {
+  text-decoration: underline;
+}
+
+/* Lets style all the spans 
+that are INSIDE of a div */
+div span {
+  color: green;
+}
+
+/* Lets style all the spans
+that are directly children of a div
+
+the > means direct child
+*/
+div > span {
+  color: blue;
 }
 
 h1 {
   color: rebeccapurple;
+  margin: 40px;
+  border: 5px solid green;
+  padding: 10px;
 }
 
-span {
+/* span {
   color: orange;
+} */
+
+img {
+  width: 200px;
 }
